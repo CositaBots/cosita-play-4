@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "*";
+const prefix = "4";
 /////////////////////////
 ////////////////////////
 
@@ -347,14 +347,14 @@ client.on('message', message => {
             if (message.content.startsWith(prefix + "help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     **Prefix [*play] ** ')
-.addField('     **(1)-*play** ' ,' **فتح الموسيقي** ')
-.addField('     **(2)-*skip**  ' ,' **تروح للاغنيه البعدها** ')
-.addField('     **(3)-*stop** ' , '**تخرج البوت من الروم**') 
-.addField('     **(4)-*pause** ' , '**توقف الموسيقي**') 
-.addField('     **(5)-*resume** ' ,' ** تكمل المسوقي** ')
-.addField('     **(6)-*vol** ' ,' ** تعلي او توطي الوت** ')
-.addField('     **(7)-*ping** ' ,' ** علشان تعرف بينق البوت** ')   
+.addField('     **Prefix [4play] ** ')
+.addField('     **(1)-4play** ' ,' **فتح الموسيقي** ')
+.addField('     **(2)-4skip**  ' ,' **تروح للاغنيه البعدها** ')
+.addField('     **(3)-4stop** ' , '**تخرج البوت من الروم**') 
+.addField('     **(4)-4pause** ' , '**توقف الموسيقي**') 
+.addField('     **(5)-4resume** ' ,' ** تكمل المسوقي** ')
+.addField('     **(6)-4vol** ' ,' ** تعلي او توطي الوت** ')
+.addField('     **(7)-4ping** ' ,' ** علشان تعرف بينق البوت** ')   
 .setColor('#ff0004')
   message.channel.sendEmbed(embed);
     }
@@ -362,15 +362,15 @@ client.on('message', message => {
 
 
 
-client.on('ready', () => {
+  client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Desert Bot- Script By : yousef`);
+      console.log(`Yousef Bot- Script By : iYmG`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : Yousef ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : yooousef ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`*play | Last Music`,"http://twitch.tv/TeSt")
-client.user.setStatus("dnd")
-});
+client.user.setGame(`4play`)
+client.user.setStatus("o")
+})
 
 client.login(process.env.BOT_TOKEN);
